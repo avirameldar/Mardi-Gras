@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mardi Gras2</title>
+
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="responsive-contact.css">
+    <!--  <link rel="stylesheet" href="main.css"> -->
+    <link rel="shourtcut icon" href="images/favi.png">
+    <script src="https://kit.fontawesome.com/dc18da9ae6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header class="head">
+        <div class="logo">
+            <img src="images/Logo.png" alt="Logo">
+        </div>
+        <nav class="navbar">
+
+
+            <a href="#" class="toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="links">
+                <ul>
+                    <div class="li1">
+                        <li><a href="index.html">Home</a></li>
+                    </div>
+                    <div class="li2">
+                        <li><a href="about.html">About</a></li>
+                    </div>
+                    <div class="li3">
+                        <li><a href="media.html">Media</a></li>
+                    </div>
+                    <div class="li4">
+                        <li><a href="faq.html">FAQ</a></li>
+                    </div>
+                    <div class="li5">
+                        <li><a href="contact.html">Contact</a></li>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <br><br>
+    <section class="general">
+        <h1 class="title">Contact</h1>
+        <main class="container-form">
+            <article class="contact-box">
+
+                <form id="form" class="main-form" action="#">
+                    <div class="inputBox">
+                        <fieldset>
+                            <legend> Share your thoughts with us </legend>
+                            <br>
+                            <div class="input-group">
+                                <input type="text" name="" required placeholder="Your first name" id="userName"
+                                    onkeyup="validateName()">
+                                <div id="name-error"></div>
+
+
+                            </div>
+                            <br><br>
+
+                            <div class="input-group">
+                                <input type="text" name="" required placeholder="Your last name" id="lastName"
+                                    onkeyup="validateLastName()">
+                                <div id="last-name-error"></div>
+
+
+                            </div>
+                            <br><br>
+
+                            <div class="input-group">
+                                <input type="email" name="" id="email" required placeholder="Enter your valid Email"
+                                    id="email" onkeyup="validateEmail()">
+                                <div id="email-error"> </div>
+
+
+                            </div>
+                            <br><br>
+
+                            <div class="input-group">
+                                <textarea name="Share your thoughts with us" id="What Do you Think?" maxlength="500"
+                                    placeholder="Share your thoughts with us"></textarea>
+                            </div>
+                            <br>
+                            <input type="reset" value="Reset">
+                            <input type="button" id="btn" onclick="return validateForm()" value="Contact">
+                            <div id="submit-error"></div>
+
+                        </fieldset>
+                    </div>
+                </form>
+            </article>
+        </main>
+        <br><br>
+        <div class="ways-of-contact">
+            <p>Also you can contact us through the e-mail: <br>
+            <p></p>
+            <p><a class="cont" href="mailto: info@mardigrasneworleans.com">info@mardigrasneworleans.com</a></p>
+            <br>
+            <p>Our phone numbers are: </p>
+            <p class="cont">+1 504-361-7821 , 866-488-2162
+            </p>
+            <br>
+            <p>And Address is: </p>
+            <p class="cont">380 Port of New Orleans Pl, New Orleans, 70160, United States</p>
+
+
+
+        </div>
+    </section>
+    <br><br><br>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class=" footerMenue">
+
+            <div class="linka"><a href="index.html">Home</a></div>
+            <div class="linka"><a href="about.html">About</a></div>
+            <div class="linka"><a href="media.html">Media</a></div>
+            <div class="linka"><a href="faq.html">FAQ</a></div>
+            <div class="linka"><a href="contact.html">Contact</a></div>
+
+        </div>
+
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/MardiGrasNewOrleans" target="_blank"><img class="fb"
+                    src="images/SocialMedia/FB_white.png" alt="FaceBook">
+            </a>
+            <a href=" https://www.instagram.com/mardigrasneworleans/" target="_blank"><img class="inst"
+                    src="images/SocialMedia/instagram_White.png" alt="Instegram"></a>
+            <a href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank"><img class="yt"
+                    src="images/SocialMedia/youtube_white.png" alt="Youtube"></a>
+            <a href="https://twitter.com/MardiGrasNOLA" target="_blank"><img class="twitt"
+                    src="images/SocialMedia/twitter_white.png" alt="Twitter"></a>
+            <a href="https://www.tripadvisor.com/Profile/MardiGrasNOLA" target="_blank"><img class="trip"
+                    src="images/SocialMedia/tripadvisor_White.png" alt="Tripadvisor"></a>
+        </div>
+        <p class="copy">&copy;2022 - This site was created by Aviram Eldar</p>
+    </footer>
+
+    <Script src="script.js"></Script>
+    <Script src="form.js"></Script>
+
+
+</body>
+
+</html>

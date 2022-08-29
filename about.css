@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    background-color: #d1c6de;
+}
+
+/* Head */
+.head {
+    background: linear-gradient(90deg, #b99cdd, #a6dd9d, #e3d49a, #a6dd9d, #b99cdd);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: linear-gradient(90deg, #854dc9, #5bb64d, #f9d852, #854dc9,
+            #5bb64d, #854dc9,
+            #5bb64d,
+            #f9d852,
+            #854dc9,
+            #5bb64d, #854dc9,
+            #5bb64d,
+            #f9d852,
+            #854dc9,
+            #5bb64d, #854dc9,
+            #5bb64d,
+            #f9d852,
+            #854dc9,
+            #5bb64d, #854dc9,
+            #5bb64d,
+            #f9d852,
+            #854dc9,
+            #5bb64d);
+    color: #fff;
+}
+
+.links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.links li {
+    list-style: none;
+    font-size: 1.5rem;
+    height: 3rem;
+    padding: 0rem 8.64rem;
+    font-family: 'Henny Penny';
+    display: flex;
+    align-items: center;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.li1 {
+
+    text-align: center;
+    background: linear-gradient(#583386, #9c5aed, rgb(88, 51, 134));
+    transition: all 0.5s ease-in-out;
+}
+
+.li2 {
+
+    text-align: center;
+    background: linear-gradient(#346c2b, #56b148, #346c2b);
+    transition: all 0.5s ease-in-out;
+}
+
+.li3 {
+
+    text-align: center;
+    background: linear-gradient(#b69d3c, #fada57, #b9a03d);
+    transition: all 0.5s ease-in-out;
+}
+
+.li4 {
+
+    text-align: center;
+    background: linear-gradient(#346c2b, #56b148, #346c2b);
+    transition: all 0.5s ease-in-out;
+}
+
+.li5 {
+    text-align: center;
+    background: linear-gradient(#583386, #9c5aed, #583386);
+    transition: all 0.5s ease-in-out;
+}
+
+.li1:hover {
+    text-align: center;
+    background-color: #854dc9;
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.li2:hover {
+    text-align: center;
+    /* background-color: #5bb64d; */
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.li3:hover {
+    text-align: center;
+    background-color: #f9d852;
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.li4:hover {
+    text-align: center;
+    background-color: #5bb64d;
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.li5:hover {
+    text-align: center;
+    background-color: #854dc9;
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+a {
+    color: #583386;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FCF8E7;
+}
+
+/* Section */
+
+.general {
+    max-width: 1400px;
+    margin: 0px auto;
+
+}
+
+.title {
+
+    text-align: center;
+    font-family: Pattaya;
+    font-size: 5rem;
+    color: #583386;
+    padding-bottom: 2rem;
+    transition: all 0.7s ease-in-out;
+}
+
+.title:hover {
+    color: #346c2b;
+    transition: all 0.5s ease-in-out;
+}
+
+.decoration {
+    width: 200px;
+    position: absolute;
+    top: 245px;
+    left: 45px;
+    transform: rotate(-35deg);
+}
+
+
+
+.grid-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 1.5rem;
+    grid-template-areas:
+        "about about about about"
+        "histoy histoy history mayor";
+
+}
+
+.about {
+    grid-area: about;
+    grid-column: span 4;
+    background: #583386;
+    border: 3px solid #5bb64d;
+    border-radius: 15px;
+    color: #fff;
+    padding: 20px;
+}
+
+.pic-about {
+    text-align: center;
+}
+
+.the-pic {
+    border: 5px solid #b39b39;
+    border-radius: 15px;
+}
+
+.history {
+    grid-area: history;
+    grid-column: span 3;
+    height: 80vh;
+    background: #346c2b;
+    border: 3px solid #b39b39;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px;
+    line-height: 1.8rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none
+}
+
+.history .sub-title {
+    text-align: center;
+    font-family: Pattaya;
+    font-size: 2rem;
+    color: #b79e3a;
+    padding: 2rem;
+    transition: all 0.7s ease-in-out;
+}
+
+.history .sub-title:hover {
+    color: #583386;
+    transition: all 0.5s ease-in-out;
+}
+
+.history-pic {
+    border: 5px solid #583386;
+    border-radius: 15px;
+    width: 400px;
+}
+
+.mayor {
+    grid-area: mayor;
+    grid-column: span 1;
+    height: 80vh;
+    background: #917e2f;
+    border: 3px solid #9c5aed;
+    border-radius: 15px;
+    color: #fff;
+    padding: 10px;
+    line-height: 1.8rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none
+}
+
+.mayor .sub-title {
+    text-align: center;
+    font-family: Pattaya;
+    font-size: 2rem;
+    color: #583386;
+    padding: 2rem;
+    transition: all 0.7s ease-in-out;
+}
+
+.mayor .sub-title:hover {
+    color: #346c2b;
+    transition: all 0.5s ease-in-out;
+}
+
+.mayor-pic {
+    border: 5px solid #346c2b;
+    border-radius: 15px;
+
+
+    width: 18rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #000;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.footerMenue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.linka {
+    font-family: 'Henny Penny';
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 1.5rem;
+    height: 3rem;
+    color: #fff;
+}
+
+.linka a {
+    color: #fff;
+}
+
+.linka a:hover {
+    color: #5bb64d;
+}
+
+
+.socialMedia {
+    margin-top: 40px;
+}
+
+.socialMedia img {
+    width: 70px;
+    padding: 15px;
+}
+
+.fb:hover {
+    content: url('images/SocialMedia/FB_Blue.png');
+}
+
+.inst:hover {
+    content: url('images/SocialMedia/instagram.svg');
+}
+
+.yt:hover {
+    content: url('images/SocialMedia/youtube.png');
+}
+
+.twitt:hover {
+    content: url('images/SocialMedia/twitter.png');
+}
+
+.trip:hover {
+    content: url('images/SocialMedia/tripadvisor.png');
+}
+
+.copy {
+    padding-top: 40px;
+    letter-spacing: 1px;
+    font-size: 8pt;
+    text-align: center;
+    color: #ffffff;
+    font-family: roboto;
+}

@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    background-color: #d1c6de;
+}
+
+.head {
+    background: linear-gradient(90deg, #b99cdd, #a6dd9d, #e3d49a, #a6dd9d, #b99cdd)
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: linear-gradient(90deg, #854dc9, #5bb64d, #f9d852, #854dc9,
+            #5bb64d, #854dc9,
+            #5bb64d,
+            #f9d852,
+            #854dc9,
+            #5bb64d, #854dc9,
+            #5bb64d,
+            #f9d852,
+            #854dc9,
+            #5bb64d, #854dc9,
+            #5bb64d,
+            #f9d852,
+            #854dc9,
+            #5bb64d, #854dc9,
+            #5bb64d,
+            #f9d852,
+            #854dc9,
+            #5bb64d);
+    color: #fff;
+    z-index: 999;
+}
+
+.links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.links li {
+    list-style: none;
+    font-size: 1.5rem;
+    height: 3rem;
+    padding: 0rem 8.8rem;
+    font-family: 'Henny Penny';
+    display: flex;
+    align-items: center;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.li1 {
+
+    text-align: center;
+    background: linear-gradient(#583386, #9c5aed, #583386);
+    transition: all 0.5s ease-in-out;
+}
+
+.li2 {
+
+    text-align: center;
+    background: linear-gradient(#346c2b, #56b148, #346c2b);
+    transition: all 0.5s ease-in-out;
+}
+
+.li3 {
+
+    text-align: center;
+    background: linear-gradient(#b69d3c, #fada57, #b9a03d);
+    transition: all 0.5s ease-in-out;
+}
+
+.li4 {
+
+    text-align: center;
+    background: linear-gradient(#346c2b, #56b148, #346c2b);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.li5 {
+    text-align: center;
+    background: linear-gradient(#583386, #9c5aed, #583386);
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.li1:hover {
+    text-align: center;
+    background-color: #854dc9;
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.li2:hover {
+    text-align: center;
+    /* background-color: #5bb64d; */
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.li3:hover {
+    text-align: center;
+    background-color: #f9d852;
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.li4:hover {
+    text-align: center;
+    background-color: #5bb64d;
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.li5:hover {
+    text-align: center;
+    background-color: #854dc9;
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.toggle {
+    position: absolute;
+    top: 2.5rem;
+    right: 1.8rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+/* SLIDER */
+
+.title {
+
+    text-align: center;
+    font-family: Pattaya;
+    font-size: 5rem;
+    color: #583386;
+    padding: 2rem;
+    transition: all 0.7s ease-in-out;
+}
+
+.title:hover {
+    color: #346c2b;
+    transition: all 0.5s ease-in-out;
+}
+
+.slider {
+    border-top-width: 7px;
+    border-top-style: solid;
+    border-top-color: #583386;
+    border-bottom-width: 7px;
+    border-bottom-style: solid;
+    border-bottom-color: #583386;
+
+
+}
+
+.label {
+    font-family: Pattaya;
+    font-size: 3rem;
+    text-shadow: 2px 2px #000;
+
+}
+
+.say {
+    font-family: Roboto;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px #000;
+    background-color: rgba(88, 51, 134, .5);
+}
+
+/* Cards */
+.cards {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.sub-title-card {
+    font-family: Pattaya;
+    text-align: center;
+    background-color: #b9a03d;
+    text-shadow: 1px 1px #000000;
+}
+
+.inside1 {
+    background-color: #583386;
+    color: #FCF8E7;
+    width: 475px;
+    height: 600px;
+    padding: 15px;
+    margin: 10px;
+    border: 5px solid #346c2b;
+    border-radius: 20px;
+    line-height: 1.8rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.inside1::-webkit-scrollbar {
+    width: 7px;
+
+
+}
+
+.inside1::-webkit-scrollbar-track {
+    background: #583386;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.inside1::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 2px;
+}
+
+.inside2 {
+    background-color: #346c2b;
+    color: #FCF8E7;
+    width: 475px;
+    height: 600px;
+    padding: 15px;
+    margin: 10px;
+    border: 5px solid #583386;
+    border-radius: 20px;
+    line-height: 1.8rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.inside3 {
+    background-color: #583386;
+    color: #FCF8E7;
+    width: 475px;
+    height: 600px;
+    padding: 15px;
+    margin: 10px;
+    border: 5px solid #346c2b;
+    border-radius: 20px;
+    line-height: 1.8rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.inside3::-webkit-scrollbar {
+    width: 7px;
+}
+
+.inside3::-webkit-scrollbar-track {
+    background: #583386;
+    border-radius: 0px 3px 3px 0;
+}
+
+.inside3::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 2px;
+}
+
+.image-card {
+    display: flex;
+    justify-content: center;
+    height: 235px;
+}
+
+.booking {
+    text-align: center;
+}
+
+
+.btn-card-to1 {
+    border: 3px solid #583386;
+    border-radius: 10px;
+    padding: 4px 8px;
+    color: #000;
+    margin: 10px;
+    background-color: #b9a03d;
+
+}
+
+.btn-card-to1:hover {
+    color: #FCF8E7;
+    background-color: #583386;
+}
+
+.btn-card-to2 {
+    border: 3px solid #583386;
+    border-radius: 10px;
+    padding: 4px 8px;
+    color: #000;
+    background-color: #b9a03d;
+
+}
+
+.btn-card-to2:hover {
+    color: #FCF8E7;
+    background-color: #583386;
+}
+
+a {
+    color: #fcfcfc;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FCF8E7;
+
+}
+
+article {
+    background-color: #e3d49a
+}
+
+.sponsersTitle {
+    text-align: center;
+    font-size: 3rem;
+    color: #583386;
+    font-family: Pattaya;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 150px);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+
+
+}
+
+.item {
+    align-items: center;
+    border-radius: 10px;
+    font-family: Roboto;
+
+}
+
+.sponserImageSize {
+    width: 150px;
+}
+
+.sponserImageSizeP {
+    width: 80px;
+
+}
+
+.sponserImageSizeC {
+    width: 120px;
+}
+
+.sponserImageSizeR {
+    width: 200px;
+}
+
+.sponserImageSizeM {
+    width: 220px;
+}
+
+.sponserImageSizeH {
+    width: 180px;
+}
+
+.item:hover {
+    transform: scale(1.5);
+    transition: all 0.3s ease-in-out;
+}
+
+footer {
+    background-color: #000;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.footerMenue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.linka {
+    font-family: 'Henny Penny';
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 1.5rem;
+    height: 3rem;
+    color: #fff;
+}
+
+.linka a {
+    color: #fff;
+}
+
+.linka a:hover {
+    color: #5bb64d;
+}
+
+
+.socialMedia {
+    margin-top: 40px;
+}
+
+.socialMedia img {
+    width: 70px;
+    padding: 15px;
+
+}
+
+.fb:hover {
+    content: url('images/SocialMedia/FB_Blue.png');
+}
+
+.inst:hover {
+    content: url('images/SocialMedia/instagram.svg');
+}
+
+.yt:hover {
+    content: url('images/SocialMedia/youtube.png');
+}
+
+.twitt:hover {
+    content: url('images/SocialMedia/twitter.png');
+}
+
+.trip:hover {
+    content: url('images/SocialMedia/tripadvisor.png');
+}
+
+.copy {
+
+    padding-top: 40px;
+    letter-spacing: 1px;
+    font-size: 8pt;
+    text-align: center;
+    color: #ffffff;
+    font-family: roboto;
+}

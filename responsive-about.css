@@ -1,0 +1,1071 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.toggle {
+    position: absolute;
+    top: 2.5rem;
+    right: 1.8rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+@media (min-width: 1324px) and (max-width: 1524px) {
+    .links li {
+
+        padding: 0rem 6rem;
+
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1324px) {
+    .links li {
+
+        padding: 0rem 5rem;
+
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    .links li {
+        padding: 0rem 4rem;
+    }
+
+    /* Section */
+
+    .general {
+        max-width: 1024px;
+        margin: 0px auto;
+
+    }
+
+    .title {
+        text-align: center;
+        font-family: Pattaya;
+        font-size: 5rem;
+        color: #583386;
+        padding-bottom: 2rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .title:hover {
+        color: #346c2b;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .decoration {
+        width: 200px;
+        position: absolute;
+        top: 245px;
+        left: 45px;
+        transform: rotate(-35deg);
+    }
+
+
+    .pic-about {
+        text-align: center;
+    }
+
+    .mainAbout {
+        border: 5px solid #b39b39;
+        border-radius: 15px;
+        width: 10ram;
+    }
+
+    .history-pic {
+        border: 5px solid #583386;
+        border-radius: 15px;
+    }
+
+    .grid-container {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .about {
+
+        background: #583386;
+        border: 3px solid #5bb64d;
+        border-radius: 15px;
+        color: #fff;
+        padding: 20px;
+
+    }
+
+    .history {
+
+        background: #346c2b;
+        border: 3px solid #b39b39;
+        border-radius: 15px;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .history .sub-title {
+        text-align: center;
+        font-family: Pattaya;
+        font-size: 2rem;
+        color: #b79e3a;
+        padding: 2rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .history .sub-title:hover {
+        color: #583386;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .mayor {
+        background: #917e2f;
+        border: 3px solid #9c5aed;
+        border-radius: 15px;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .mayor-pic {
+        border: 5px solid #346c2b;
+        border-radius: 15px;
+        float: left;
+        margin-right: 15px;
+    }
+
+    .mayor .sub-title {
+        text-align: center;
+        font-family: Pattaya;
+        font-size: 2rem;
+        color: #583386;
+        padding: 2rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .mayor .sub-title:hover {
+        color: #346c2b;
+        transition: all 0.5s ease-in-out;
+    }
+}
+
+
+
+/* The Tablet size according to Bootstrap */
+@media (min-width: 768px) and (max-width: 992px) {
+    .toggle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toggle.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .links {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        top: .5rem;
+        left: 20rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .links ul {
+        position: absolute;
+        top: 7rem;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .links li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 3rem;
+    }
+
+    .links li a {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .li1:hover {
+        text-align: center;
+        background-color: #854dc9;
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li2:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li3:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li4:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li5:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .title {
+        font-size: 3rem;
+        margin-top: 7rem;
+    }
+
+    .decoration {
+        width: 80px;
+        position: absolute;
+        top: 210px;
+        left: 10rem;
+        transform: rotate(-25deg);
+    }
+
+
+    .mainAbout {
+        border: 4px solid #b39b39;
+        border-radius: 15px;
+        width: 30rem;
+    }
+
+    .history-pic {
+        border: 4px solid #583386;
+        border-radius: 15px;
+        width: 31rem;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+
+    }
+
+    .about {
+        width: 600px;
+        height: 800px;
+        margin-left: 1rem;
+        background: #583386;
+        border: 3px solid #5bb64d;
+        border-radius: 15px;
+        color: #fff;
+        padding: 20px;
+        line-height: 1.8rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none
+    }
+
+    .history {
+        width: 600px;
+        height: 800px;
+        margin-left: 1rem;
+        background: #346c2b;
+        border: 3px solid #b39b39;
+        border-radius: 15px;
+        color: #fff;
+        padding: 10px;
+        line-height: 1.8rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none
+    }
+
+    .history .sub-title {
+        text-align: center;
+        font-family: Pattaya;
+        font-size: 2rem;
+        color: #b79e3a;
+        padding: 2rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .history .sub-title:hover {
+        color: #583386;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .mayor {
+        width: 600px;
+        height: 800px;
+        margin-left: 1rem;
+        background: #917e2f;
+        border: 3px solid #9c5aed;
+        border-radius: 15px;
+        color: #fff;
+        padding: 10px;
+        line-height: 1.8rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none
+    }
+
+    .mayor-pic {
+        border: 5px solid #346c2b;
+        border-radius: 15px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        float: none;
+        width: 30rem
+    }
+
+    .mayor .sub-title {
+        text-align: center;
+        font-family: Pattaya;
+        font-size: 2rem;
+        color: #583386;
+        padding: 2rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .mayor .sub-title:hover {
+        color: #346c2b;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .linka {
+        font-family: 'Henny Penny';
+        margin-top: 10px;
+        padding: 20px;
+        font-size: 1.5rem;
+        height: 3rem;
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet size bigger */
+@media (min-width: 676px) and (max-width: 768px) {
+    .toggle {
+        display: flex;
+    }
+
+    .toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toggle.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .links {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        top: .5rem;
+        left: 13rem;
+
+    }
+
+    .navbar {
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .links ul {
+        position: absolute;
+        top: 7rem;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .links li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 1.5rem;
+    }
+
+    .links li a {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .li1:hover {
+        text-align: center;
+        background-color: #854dc9;
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li2:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li3:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li4:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li5:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* End of NavBar */
+
+
+    .title {
+        font-size: 3rem;
+        margin-top: 7rem;
+        padding-bottom: 1rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .decoration {
+        width: 80px;
+        position: absolute;
+        top: 195px;
+        left: 2.5rem;
+        transform: rotate(-25deg);
+    }
+
+
+    .mainAbout {
+        border: 4px solid #b39b39;
+        border-radius: 15px;
+        width: 30rem;
+    }
+
+    .history-pic {
+        border: 4px solid #583386;
+        border-radius: 15px;
+        width: 31rem;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+
+    }
+
+    .about {
+        width: 600px;
+        height: 800px;
+        margin-left: 1rem;
+        background: #583386;
+        border: 3px solid #5bb64d;
+        border-radius: 15px;
+        color: #fff;
+        padding: 20px;
+        line-height: 1.8rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none
+    }
+
+    .history {
+        width: 600px;
+        height: 800px;
+        margin-left: 1rem;
+        background: #346c2b;
+        border: 3px solid #b39b39;
+        border-radius: 15px;
+        color: #fff;
+        padding: 10px;
+        line-height: 1.8rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none
+    }
+
+    .history .sub-title {
+        text-align: center;
+        font-family: Pattaya;
+        font-size: 2rem;
+        color: #b79e3a;
+        padding: 2rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .history .sub-title:hover {
+        color: #583386;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .mayor {
+        width: 600px;
+        height: 800px;
+        margin-left: 1rem;
+        background: #917e2f;
+        border: 3px solid #9c5aed;
+        border-radius: 15px;
+        color: #fff;
+        padding: 10px;
+        line-height: 1.8rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none
+    }
+
+    .mayor-pic {
+        border: 5px solid #346c2b;
+        border-radius: 15px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        float: none;
+        width: 30rem
+    }
+
+    .mayor .sub-title {
+        text-align: center;
+        font-family: Pattaya;
+        font-size: 2rem;
+        color: #583386;
+        padding: 2rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .mayor .sub-title:hover {
+        color: #346c2b;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .linka {
+        font-family: 'Henny Penny';
+        margin-top: 10px;
+        padding: 20px;
+        font-size: 1.5rem;
+        height: 3rem;
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet size --DONE-- */
+@media (min-width: 576px) and (max-width: 676px) {
+    .toggle {
+        display: flex;
+    }
+
+    .toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toggle.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .links {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        top: .5rem;
+        left: 8rem;
+
+    }
+
+    .navbar {
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .links ul {
+        position: absolute;
+        top: 7rem;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .links li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 1.5rem;
+    }
+
+    .links li a {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .li1:hover {
+        text-align: center;
+        background-color: #854dc9;
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li2:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li3:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li4:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li5:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* End of NavBar */
+
+
+    .title {
+        font-size: 3rem;
+        margin-top: 7rem;
+        padding-bottom: 1rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .decoration {
+        width: 80px;
+        position: absolute;
+        top: 195px;
+        left: 3rem;
+        transform: rotate(-25deg);
+    }
+
+
+    .mainAbout {
+        border: 4px solid #b39b39;
+        border-radius: 15px;
+        width: 20rem;
+    }
+
+    .history-pic {
+        border: 4px solid #583386;
+        border-radius: 15px;
+        width: 21rem;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+
+    }
+
+    .about {
+        width: 400px;
+        height: 600px;
+        margin-left: 1rem;
+        background: #583386;
+        border: 3px solid #5bb64d;
+        border-radius: 15px;
+        color: #fff;
+        padding: 20px;
+        line-height: 1.8rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none
+    }
+
+    .history {
+        width: 400px;
+        height: 600px;
+        margin-left: 1rem;
+        background: #346c2b;
+        border: 3px solid #b39b39;
+        border-radius: 15px;
+        color: #fff;
+        padding: 10px;
+        line-height: 1.8rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none
+    }
+
+    .history .sub-title {
+        text-align: center;
+        font-family: Pattaya;
+        font-size: 2rem;
+        color: #b79e3a;
+        padding: 2rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .history .sub-title:hover {
+        color: #583386;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .mayor {
+        width: 400px;
+        height: 600px;
+        margin-left: 1rem;
+        background: #917e2f;
+        border: 3px solid #9c5aed;
+        border-radius: 15px;
+        color: #fff;
+        padding: 10px;
+        line-height: 1.8rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none
+    }
+
+    .mayor-pic {
+        border: 5px solid #346c2b;
+        border-radius: 15px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+        float: none;
+        width: 20rem
+    }
+
+    .mayor .sub-title {
+        text-align: center;
+        font-family: Pattaya;
+        font-size: 2rem;
+        color: #583386;
+        padding: 2rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .mayor .sub-title:hover {
+        color: #346c2b;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .linka {
+        font-family: 'Henny Penny';
+        margin-top: 10px;
+        padding: 20px;
+        font-size: 1.5rem;
+        height: 3rem;
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile Device size ---- DONE ---- */
+@media (min-width: 220px) and (max-width: 576px) {
+    .toggle {
+        display: flex;
+    }
+
+    .toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .toggle.active .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    .links {
+        display: none;
+    }
+
+    .logo {
+        position: absolute;
+        top: .5rem;
+        left: 3rem;
+
+    }
+
+    .navbar {
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .links ul {
+        position: absolute;
+        top: 7rem;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .links li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 1.5rem;
+    }
+
+    .links li a {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .li1:hover {
+        text-align: center;
+        background-color: #854dc9;
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li2:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li3:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li4:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .li5:hover {
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* End of NavBar */
+
+
+    .title {
+        font-size: 3rem;
+        margin-top: 7rem;
+        padding-bottom: 1rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .decoration {
+        width: 80px;
+        position: absolute;
+        top: 195px;
+        left: 1px;
+        transform: rotate(-25deg);
+    }
+
+
+    .mainAbout {
+        border: 4px solid #b39b39;
+        border-radius: 15px;
+        width: 20rem;
+    }
+
+    .history-pic {
+        border: 4px solid #583386;
+        border-radius: 15px;
+        width: 21rem;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+
+    }
+
+    .about {
+        width: 400px;
+        height: 600px;
+        background: #583386;
+        border: 3px solid #5bb64d;
+        border-radius: 15px;
+        color: #fff;
+        padding: 20px;
+        line-height: 1.8rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none
+    }
+
+    .history {
+        width: 400px;
+        height: 600px;
+        margin-left: 1rem;
+        background: #346c2b;
+        border: 3px solid #b39b39;
+        border-radius: 15px;
+        color: #fff;
+        padding: 10px;
+        line-height: 1.8rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none
+    }
+
+    .history .sub-title {
+        text-align: center;
+        font-family: Pattaya;
+        font-size: 2rem;
+        color: #b79e3a;
+        padding: 2rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .history .sub-title:hover {
+        color: #583386;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .mayor {
+        width: 400px;
+        height: 600px;
+        margin-left: 1rem;
+        background: #917e2f;
+        border: 3px solid #9c5aed;
+        border-radius: 15px;
+        color: #fff;
+        padding: 10px;
+        line-height: 1.8rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-width: none
+    }
+
+    .mayor-pic {
+        border: 5px solid #346c2b;
+        border-radius: 15px;
+        margin-left: 25px;
+        margin-bottom: 30px;
+        width: 20rem
+    }
+
+    .mayor .sub-title {
+        text-align: center;
+        font-family: Pattaya;
+        font-size: 2rem;
+        color: #583386;
+        padding: 2rem;
+        transition: all 0.7s ease-in-out;
+    }
+
+    .mayor .sub-title:hover {
+        color: #346c2b;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .linka {
+        font-family: 'Henny Penny';
+        margin-top: 10px;
+        padding: 20px;
+        font-size: 1.0rem;
+        height: 3rem;
+        color: #fff;
+    }
+}

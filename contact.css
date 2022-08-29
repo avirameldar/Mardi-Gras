@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    background-color: #d1c6de;
+    width: 100%;
+    height: 10vh;
+    font-family: roboto;
+}
+
+.head {
+    background: linear-gradient(90deg, #b99cdd, #a6dd9d, #e3d49a, #a6dd9d, #b99cdd)
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background: linear-gradient(90deg, #854dc9, #5bb64d, #f9d852, #854dc9,
+            #5bb64d, #854dc9,
+            #5bb64d,
+            #f9d852,
+            #854dc9,
+            #5bb64d, #854dc9,
+            #5bb64d,
+            #f9d852,
+            #854dc9,
+            #5bb64d, #854dc9,
+            #5bb64d,
+            #f9d852,
+            #854dc9,
+            #5bb64d, #854dc9,
+            #5bb64d,
+            #f9d852,
+            #854dc9,
+            #5bb64d);
+    color: #fff;
+    z-index: 999;
+}
+
+.links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+.links li {
+    list-style: none;
+    font-size: 1.5rem;
+    height: 3rem;
+    padding: 0rem 8.8rem;
+    font-family: 'Henny Penny';
+    display: flex;
+    align-items: center;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.li1 {
+
+    text-align: center;
+    background: linear-gradient(#583386, #9c5aed, #583386);
+    transition: all 0.5s ease-in-out;
+}
+
+.li2 {
+
+    text-align: center;
+    background: linear-gradient(#346c2b, #56b148, #346c2b);
+    transition: all 0.5s ease-in-out;
+}
+
+.li3 {
+
+    text-align: center;
+    background: linear-gradient(#b69d3c, #fada57, #b9a03d);
+    transition: all 0.5s ease-in-out;
+}
+
+.li4 {
+
+    text-align: center;
+    background: linear-gradient(#346c2b, #56b148, #346c2b);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.li5 {
+    text-align: center;
+    background: linear-gradient(#583386, #9c5aed, #583386);
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.li1:hover {
+    text-align: center;
+    background-color: #854dc9;
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.li2:hover {
+    text-align: center;
+    /* background-color: #5bb64d; */
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.li3:hover {
+    text-align: center;
+    background-color: #f9d852;
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.li4:hover {
+    text-align: center;
+    background-color: #5bb64d;
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.li5:hover {
+    text-align: center;
+    background-color: #854dc9;
+    transform: rotate(7deg) scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+.toggle {
+    position: absolute;
+    top: 2.5rem;
+    right: 1.8rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+@media (min-width: 1324px) and (max-width: 1524px) {
+    .links li {
+
+        padding: 0rem 6rem;
+
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1324px) {
+    .links li {
+
+        padding: 0rem 5rem;
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .links li {
+
+        padding: 0rem 4rem;
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 824px) {
+    .links li {
+
+        padding: 0rem 3rem;
+
+    }
+
+    .label {
+        display: flex;
+    }
+}
+
+/* Tablet size */
+@media (min-width: 541px) and (max-width: 767px) {
+    .links li {
+
+        padding: 0rem 2rem;
+
+    }
+}
+
+/* Tablet size */
+@media (min-width: 481px) and (max-width: 540px) {
+    .links li {
+
+        padding: 0rem 1.5rem;
+
+    }
+}
+
+
+
+/* End of Responsive */
+
+
+
+.title {
+
+    text-align: center;
+    font-family: Pattaya;
+    font-size: 5rem;
+    color: #583386;
+    transition: all 0.7s ease-in-out;
+}
+
+.title:hover {
+    color: #346c2b;
+    transition: all 0.5s ease-in-out;
+}
+
+/* form */
+
+.container-form {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 100px;
+}
+
+.container-form:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("images/MardiGrasMask.jpg") no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(50px);
+}
+
+.contact-box {
+    max-width: 850px;
+}
+
+.main-form {
+    text-align: center;
+}
+
+/* Fieldset and Legend */
+fieldset {
+    padding: 1rem 2rem;
+    border: 2px solid #583386;
+    border-radius: 15px;
+    width: 500px;
+    margin: 0 auto;
+    background: rgba(52, 108, 43, .2);
+}
+
+legend {
+    font-size: 1.5rem;
+    padding: 0 0.50rem;
+    color: #fff;
+    margin: 55px;
+
+
+}
+
+/* Inputs and TextArea */
+input {
+    font-size: 1rem;
+    padding: 8px 10px;
+    margin: 8px 5px;
+    border: 1px solis #999;
+    border-radius: 8px;
+}
+
+input[type=email],
+input[type=text] {
+    width: 22rem;
+    margin: 8px 0;
+}
+
+#text {
+    display: block;
+    color: #000;
+    font-weight: 700;
+    font-style: italic;
+    padding: 5px;
+}
+
+#form.invaild .inputBox:before {
+    content: '';
+    position: absolute;
+    right: 686px;
+    top: 414px;
+    width: 24px;
+    height: 24px;
+    background: url(images/invalid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+
+#form.vaild .inputBox:before {
+    content: '';
+    position: absolute;
+    right: 686px;
+    top: 414px;
+    width: 24px;
+    height: 24px;
+    background: url(images/valid.png);
+    background-size: cover;
+    z-index: 1000;
+}
+
+textarea {
+    min-height: 8rem;
+    min-width: 20vw;
+    padding: 8px 10px;
+    border: 2px solid #111;
+    border-radius: 8px;
+    margin: 8px 0;
+    font-family: roboto;
+    font-size: 1rem;
+}
+
+input[type=button] {
+    padding: 10px;
+    border-radius: 8px;
+    font-family: roboto;
+    font-weight: 700;
+    background-color: #f2d252;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+input[type=button]:hover {
+    background-color: #f9d852;
+    cursor: pointer;
+    transform: rotate(7deg);
+
+}
+
+input[type=button]:active {
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+input[type=reset] {
+    padding: 10px;
+    margin-right: 190px;
+    border-radius: 8px;
+    font-family: roboto;
+    font-weight: 400;
+    background-color: #cfcfcf;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+input[type=reset]:hover {
+    background-color: #eaeaea;
+    cursor: pointer;
+    transform: rotate(-7deg);
+
+}
+
+input[type=reset]:active {
+    box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.ways-of-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: roboto;
+    min-width: 50px;
+}
+
+.cont {
+    color: #000;
+    font-weight: 800;
+}
+
+a:hover {
+    color: #346c2b;
+}
+
+.input-group div {
+    font-size: 14px;
+    color: #fc4747;
+}
+
+#submit-error {
+    color: #fc4747;
+}
+
+.input-group div i {
+    color: rgb(43, 237, 127);
+}
+
+/* ----------------------- */
+footer {
+    background-color: #000;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.footerMenue {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.linka {
+    font-family: 'Henny Penny';
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 1.5rem;
+    height: 3rem;
+    color: #fff;
+}
+
+.linka a {
+    color: #fff;
+}
+
+.linka a:hover {
+    color: #5bb64d;
+}
+
+
+.socialMedia {
+    margin-top: 40px;
+}
+
+.socialMedia img {
+    width: 70px;
+    padding: 15px;
+
+}
+
+.fb:hover {
+    content: url('images/SocialMedia/FB_Blue.png');
+}
+
+.inst:hover {
+    content: url('images/SocialMedia/instagram.svg');
+}
+
+.yt:hover {
+    content: url('images/SocialMedia/youtube.png');
+}
+
+.twitt:hover {
+    content: url('images/SocialMedia/twitter.png');
+}
+
+.trip:hover {
+    content: url('images/SocialMedia/tripadvisor.png');
+}
+
+.copy {
+
+    padding-top: 40px;
+    letter-spacing: 1px;
+    font-size: 8pt;
+    text-align: center;
+    color: #ffffff;
+    font-family: roboto;
+}
